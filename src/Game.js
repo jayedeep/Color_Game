@@ -57,7 +57,7 @@ export default class Game extends Component {
       <div>
         <div>
           <div class="uppermain w-100 m-0">
-            <h1 className="display-3 text-center pt-5 text-white">
+            <h1 className="display-3 text-center pt-2 text-white">
               Color Gaming!
             </h1>
           </div>
@@ -79,14 +79,13 @@ export default class Game extends Component {
           </h5>
           <div className="d-flex justify-content-center align-items-center mb-4">
             {this.props.nWrong && this.state.time <= 100 ? (
-              <h1 className="text-white ml-5 scoretext">
+              <h3 className="scoretext text-white ml-5 sorry">
                 Score:<span>{this.props.Score}</span>
-              </h1>
+              </h3>
             ) : (
               <div>
-                <h1 className="text-white ml-5 scoretext">Sorry Play Again</h1>
-                <h5 className="text-center text-danger display-4">
-                  {" "}
+                <h2 className="scoretext2 text-white">Sorry Play Again</h2>
+                <h5 className="text-center text-danger display-4 h5">
                   Your Score was {this.props.Score}
                 </h5>
               </div>
@@ -103,13 +102,13 @@ export default class Game extends Component {
               {this.props.isplaying && this.state.time <= 100 ? (
                 <div>
                   <button
-                    className="btn btn-success mr-3"
+                    className="btn btnrw btn-success mr-3"
                     onClick={this.handleright}
                   >
                     Right
                   </button>
                   <button
-                    className="btn btn-success ml-3"
+                    className="btn  btnrw btn-success ml-3"
                     onClick={this.handlewrong}
                   >
                     Wrong
@@ -117,7 +116,7 @@ export default class Game extends Component {
                 </div>
               ) : (
                 <button
-                  className="btn btn-success mt-4 Play-again mb-5"
+                  className="btn btnlast btn-success mt-4 Play-again mb-5"
                   onClick={this.handlestart}
                 >
                   Start Game
