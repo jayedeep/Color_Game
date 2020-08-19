@@ -1,14 +1,12 @@
 var colors = [
   "white",
   "black",
-  "pink",
   "blue",
   "green",
   "yellow",
   "red",
-  "purple",
   "orange",
-  "violet",
+ 
 ];
 
 function choice() {
