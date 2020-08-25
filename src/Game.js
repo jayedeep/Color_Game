@@ -104,12 +104,14 @@ export default class Game extends Component {
                   <button
                     className="btn btnrw btn-success mr-3"
                     onClick={this.handleright}
+                    disabled={this.state.time === 0 && true}
                   >
                     Right
                   </button>
                   <button
                     className="btn  btnrw btn-success ml-3"
                     onClick={this.handlewrong}
+                    disabled={this.state.time === 0 && true}
                   >
                     Wrong
                   </button>
